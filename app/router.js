@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('legislators', {path: '/'}, function() {
     this.resource('contact', {path: 'contact/:zip'});
     this.resource('bills');
+    this.resource('recent-bills');
   });
   this.resource('committees', function() {
     this.resource('committee', {path: 'committee/:chamber'}, function() {

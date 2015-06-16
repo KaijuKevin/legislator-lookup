@@ -16,6 +16,10 @@
   <label for="bills">Show upcoming bills</label>
   <button class="btn btn-primary" {{action 'showBills'}}>Show</button>
 </div>
+<div class="recentBills">
+  <label for="recent-bills">Show recent bills</label>
+  <button class="btn btn-primary" {{action 'showRecentBills'}}>Show</button>
+</div>
 <div class="container">
   {{outlet 'bills'}}
 </div>

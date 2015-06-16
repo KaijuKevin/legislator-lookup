@@ -1,0 +1,10 @@
+<h3>Recent Bills</h3>
+<ul>
+  {{#each recentBill in model}}
+      <li>
+        <span class="bill-description">
+          {{recentBill.official_title}}
+        </span><br>
+      </li>
+  {{/each}}
+</ul>

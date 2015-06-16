@@ -6,7 +6,10 @@ export default Ember.Controller.extend({
       this.transitionToRoute('contact', this.get('zip'));
     },
     showBills: function() {
-      this.transitionToRoute('bills')
+      this.transitionToRoute('bills');
+    },
+    showRecentBills: function() {
+      this.transitionToRoute('recent-bills');
     }
   }
 });
