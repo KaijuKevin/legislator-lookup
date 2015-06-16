@@ -1,0 +1,13 @@
+<h1>Committees</h1>
+<form>
+  <!-- <select id="chambers" name="chambers" value=chamber>
+    <option value="senate">Senate</option>
+    <option value="house">House</option>
+  </select> -->
+  {{view 'select' content=chamberSelect value=chamber}}
+  <button {{action 'selectChamber'}}>Select Chamber</button>
+</form>
+
+<div class="container">
+  {{outlet}}
+</div>
