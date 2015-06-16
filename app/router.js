@@ -16,6 +16,7 @@ Router.map(function() {
       this.resource('subcommittee', {path: '/subcommittee/:parent_committee_id'});
     });
   });
+  this.resource('bill-info', {path: 'bill-info/:bill_id'});
 });
 
 export default Router;
