@@ -11,7 +11,9 @@ Router.map(function() {
     this.resource('bills');
   });
   this.resource('committees', function() {
-    this.resource('committee', {path: 'committee/:chamber'})
+    this.resource('committee', {path: 'committee/:chamber'}, function() {
+      this.resource('subcommittee', {path: '/subcommittee/:parent_committee_id'});
+    });
   });
 });
 

@@ -1,5 +1,9 @@
 <ul>
 {{#each committee in model}}
-  <li>{{committee.name}}</li>
+  <li>
+    {{#link-to 'subcommittee' committee.committee_id}}{{committee.name}}{{/link-to}}
+  </li>
 {{/each}}
 </ul>
+
+{{outlet}}
