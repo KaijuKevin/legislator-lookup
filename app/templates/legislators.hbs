@@ -8,6 +8,14 @@
 
   <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
 </form>
+
 <div class="container">
   {{outlet}}
+</div>
+<div class="bills">
+  <label for="bills">Show upcoming bills</label>
+  <button class="btn btn-primary" {{action 'showBills'}}>Show</button>
+</div>
+<div class="container">
+  {{outlet 'bills'}}
 </div>

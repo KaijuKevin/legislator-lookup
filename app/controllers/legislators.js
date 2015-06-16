@@ -4,6 +4,9 @@ export default Ember.Controller.extend({
   actions: {
     submit: function() {
       this.transitionToRoute('contact', this.get('zip'));
+    },
+    showBills: function() {
+      this.transitionToRoute('bills')
     }
   }
 });

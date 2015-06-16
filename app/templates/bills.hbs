@@ -1,0 +1,10 @@
+<h3>Upcoming Bills</h3>
+<ul>
+  {{#each bill in model}}
+      <li>
+        <span class="bill-description">
+          {{bill.chamber}}{{bill.description}}
+        </span><br>
+      </li>
+  {{/each}}
+</ul>
